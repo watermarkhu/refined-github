@@ -64,6 +64,7 @@ import './features/sync-pr-commit-title.js';
 import './features/hide-inactive-deployments.js';
 import './features/pull-request-hotkeys.js';
 import './features/one-click-review-submission.js';
+import './features/approve-prs-from-list.js';
 import './features/embed-gist-inline.js';
 import './features/comments-time-machine-links.js';
 import './features/esc-to-deselect-line.js';

@@ -5,6 +5,8 @@ import renamedFeatures from './feature-renames.json' with {type: 'json'};
 
 export type RghOptions = typeof defaults;
 
+const disabledByDefault = new Set<string>(['approve-prs-from-list']);
+
 // eslint-disable-next-line prefer-object-spread -- TypeScript hates this one weird trick
 const defaults = Object.assign({
 	actionUrl: 'https://github.com/',
@@ -12,7 +14,7 @@ const defaults = Object.assign({
 	personalToken: [''],
 	logging: false,
 	logHttp: false,
-}, Object.fromEntries(importedFeatures.map(id => [`feature:${id}`, true])));
+}, Object.fromEntries(importedFeatures.map(id => [`feature:${id}`, !disabledByDefault.has(id)])));
 
 export function isFeatureDisabled(options: RghOptions, id: string): boolean {
 	// Must check if it's specifically `false`: It could be undefined if not yet in the readme or if misread from the entry point #6606

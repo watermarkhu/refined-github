@@ -1,0 +1,9 @@
+.btn.rgh-approve-pr {
+	flex-shrink: 0;
+	align-self: center;
+	margin-inline-start: 8px;
+	padding: 0 8px;
+	font-size: 12px;
+	line-height: 20px;
+	white-space: nowrap;
+}

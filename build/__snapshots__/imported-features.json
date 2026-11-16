@@ -5,6 +5,7 @@
 	"actionable-pr-view-file",
 	"actions-run-removal",
 	"align-issue-labels",
+	"approve-prs-from-list",
 	"archive-forks-link",
 	"avoid-accidental-submissions",
 	"batch-mark-files-as-viewed",

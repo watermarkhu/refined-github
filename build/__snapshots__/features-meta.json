@@ -32,6 +32,12 @@
 		"screenshot": "https://github.com/user-attachments/assets/dca5dc12-7283-4704-a93f-5bfe5f2b1938"
 	},
 	{
+		"id": "approve-prs-from-list",
+		"description": "Adds an opt-in, two-click Approve button to open PRs in PR lists. Disabled by default.",
+		"css": true,
+		"screenshot": null
+	},
+	{
 		"id": "archive-forks-link",
 		"description": "Helps you find forks on archived repos.",
 		"screenshot": "https://user-images.githubusercontent.com/1402241/230362566-12493c80-bffe-4c7a-b9ba-4a11b1358ab0.png"
